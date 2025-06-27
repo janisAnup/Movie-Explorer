@@ -5,11 +5,10 @@ st.set_page_config(page_title="🎬 Movie Explorer by Genre", layout="wide")
 st.title("🎥 Movie Explorer by Genre")
 st.markdown("Select a genre to explore movies 👇")
 
-# 🎭 Genre dropdown
 all_genres = sorted({genre for sublist in movies['genres'] for genre in sublist})
 selected_genre = st.selectbox("🎭 Choose Genre:", ["-- Select Genre --"] + all_genres)
 
-# 🎬 Genre-based movie list
+
 if selected_genre and selected_genre != "-- Select Genre --":
     st.subheader(f"🎬 Movies in Genre: {selected_genre}")
     genre_movies = movies[movies['genres'].apply(lambda x: selected_genre in x)].head(30)

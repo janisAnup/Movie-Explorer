@@ -4,13 +4,11 @@ import streamlit as st
 
 @st.cache_data
 def load_movies():
-    # Load metadata
+
     movies = pd.read_csv("movies_metadata.csv", low_memory=False)
 
-    # Drop rows with missing titles or genres
     movies = movies.dropna(subset=["title", "genres", "overview"])
 
-    # Parse JSON-like strings in 'genres'
     def parse_genres(genre_str):
         try:
             genres = ast.literal_eval(genre_str)
@@ -20,16 +18,14 @@ def load_movies():
 
     movies['genres'] = movies['genres'].apply(parse_genres)
 
-    # Add lowercase version of title (just in case it's useful)
     movies['title_lower'] = movies['title'].str.lower()
 
-    # Fill missing fields
     movies['overview'] = movies['overview'].fillna('')
     movies['vote_average'] = pd.to_numeric(movies['vote_average'], errors='coerce').fillna(0)
     movies['popularity'] = pd.to_numeric(movies['popularity'], errors='coerce').fillna(0)
     movies['release_date'] = movies['release_date'].fillna("Unknown")
 
-    # Add placeholder IMDb URLs
+
     def get_imdb_url(imdb_id):
         if pd.notna(imdb_id) and imdb_id != 'nan':
             return f"https://www.imdb.com/title/{imdb_id}/"
@@ -37,7 +33,6 @@ def load_movies():
 
     movies['imdb_url'] = movies['imdb_id'].apply(get_imdb_url)
 
-    # Load and process keywords
     try:
         keywords = pd.read_csv("keywords.csv")
         keywords['keywords'] = keywords['keywords'].fillna('[]').apply(ast.literal_eval)
@@ -48,14 +43,12 @@ def load_movies():
             keyword_list = [kw['name'] for kw in row['keywords'] if 'name' in kw]
             keyword_dict[str(movie_id)] = keyword_list
 
-        # Match movie ids (TMDB id) with keyword file
         movies['tags'] = movies['id'].astype(str).map(keyword_dict).fillna('').apply(lambda x: x if isinstance(x, list) else [])
     except:
         movies['tags'] = [[] for _ in range(len(movies))]
 
     return movies
 
-# Load movies once
 movies = load_movies()
 
 
