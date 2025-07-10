@@ -51,7 +51,6 @@ Movie-Explorer/
 ├── keywords.csv           # Contains keyword tags
 ├── links.csv              # TMDB/IMDB mapping
 ├── movies_metadata.csv    # Main movie dataset
-├── requirements.txt       # All Python dependencies
 ├── README.md              # This file
 └── .venv/ (optional)      # Virtual environment
 ```
@@ -74,7 +73,7 @@ Movie-Explorer/
 
 💼 Internship Info
 
-This project is part of my internship with **Next24Tech**, under **Task 2: Building a Movie Explorer GUI** using **Streamlit in Python**.  
+This project is part of my internship with **Next24Tech**, under **Task 2: Building a Chatbot** using **Python**.  
 The aim was to gain hands-on experience in:
 
 - 🧩 GUI design using Streamlit
