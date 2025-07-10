@@ -1,2 +1,70 @@
 Hey Janis here <br>
 This is my 2nd task as an intern at Next24Tech
+🎬 Movie Explorer
+A sleek and interactive web application built using Streamlit that allows users to explore movies by genre and view key movie details such as rating, popularity, tags, and more. This was developed as part of Task 2 for my internship at Next24Tech.
+
+📌 Features
+🔍 Filter movies based on genre
+
+🎥 View movie details like:
+
+Title & release date
+
+Genre and tags
+
+Rating and popularity
+
+Overview (short summary)
+
+🧠 Caching for better performance
+
+📁 Data processed from CSV files (movies_metadata.csv, keywords.csv, links.csv)
+
+🛠️ Technologies Used
+Python 3
+
+Streamlit
+
+Pandas
+
+AST (Abstract Syntax Trees)
+
+📂 Folder Structure
+graphql
+Copy
+Edit
+Movie Explorer/
+├── app.py              # Main Streamlit application
+├── recommender.py      # Core logic for movie extraction & filtering
+├── keywords.csv        # Movie tags data
+├── links.csv           # Mapping of movie IDs to TMDb
+├── movies_metadata.csv # Main movie dataset
+├── .gitignore
+└── README.md
+
+
+🚀 How to Run
+Clone the repository
+
+<pre> 
+git clone https://github.com/janisAnup/Movie-Explorer.git
+cd Movie-Explorer</pre>
+	
+(Optional) Create and activate a virtual environment
+
+python -m venv .venv
+.venv\Scripts\activate
+Install the dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the app
+
+bash
+Copy
+Edit
+streamlit run app.py
+📚 Internship Info
+This project is part of my internship with Next24Tech, under Task 2: Building a Movie Explorer GUI using Streamlit in Python. The aim was to gain hands-on experience in GUI design, working with datasets, and web-based data exploration.
