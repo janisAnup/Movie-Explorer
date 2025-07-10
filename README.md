@@ -1,5 +1,5 @@
 ```markdown
-# 🎬 Movie Explorer
+🎬 Movie Explorer
 
 A sleek and interactive movie recommender and explorer app built using **Streamlit** and **Python**.
 
@@ -11,29 +11,29 @@ This app allows users to:
 
 ---
 
-## 🚀 How to Run
+🚀 How to Run
 
-### 📥 Clone the repository
+📥 Clone the repository
 
 ```bash
 git clone https://github.com/janisAnup/Movie-Explorer.git
 cd Movie-Explorer
 ```
 
-### 🛠️ (Optional) Create and activate a virtual environment
+🛠️ (Optional) Create and activate a virtual environment
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate   # On Windows
 ```
 
-### 📦 Install the dependencies
+📦 Install the dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### ▶️ Run the app
+▶️ Run the app
 
 ```bash
 streamlit run app.py
@@ -41,7 +41,7 @@ streamlit run app.py
 
 ---
 
-## 📂 Project Structure
+📂 Project Structure
 
 ```plaintext
 Movie-Explorer/
@@ -58,7 +58,7 @@ Movie-Explorer/
 
 ---
 
-## 🌟 Features
+🌟 Features
 
 - Clean dark-themed UI
 - Genre-based movie filtering
@@ -72,7 +72,7 @@ Movie-Explorer/
 
 ---
 
-## 💼 Internship Info
+💼 Internship Info
 
 This project is part of my internship with **Next24Tech**, under **Task 2: Building a Movie Explorer GUI** using **Streamlit in Python**.  
 The aim was to gain hands-on experience in:
@@ -82,14 +82,3 @@ The aim was to gain hands-on experience in:
 - 🌐 Building and deploying web-based Python applications
 
 ---
-
-## 🙌 Acknowledgements
-
-- Kaggle: [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset)
-- Streamlit documentation
-- My mentors and peers at **Next24Tech**
-
----
-
-> ⚠️ Note: The `credits.csv` file was excluded due to GitHub’s 100MB file size limit. This project works without it.
-```
