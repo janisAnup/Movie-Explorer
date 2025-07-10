@@ -1,4 +1,4 @@
-```markdown
+
 🎬 Movie Explorer
 
 A sleek and interactive movie recommender and explorer app built using **Streamlit** and **Python**.
