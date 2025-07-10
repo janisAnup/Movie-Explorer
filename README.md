@@ -1,11 +1,9 @@
-Hey Janis here <br>
-This is my 2nd task as an intern at Next24Tech<br>
 🎬 Movie Explorer<br>
+
 A sleek and interactive web application built using Streamlit that allows users to explore movies by genre and view key movie details such as rating, popularity, tags, and more. This was developed as part of Task 2 for my internship at Next24Tech.<br>
 
 📌 Features<br>
 🔍 Filter movies based on genre<br>
-
 🎥 View movie details like:<br>
 Title & release date<br>
 Genre and tags<br>
@@ -28,7 +26,6 @@ Movie Explorer/
 ├── keywords.csv        # Movie tags data
 ├── links.csv           # Mapping of movie IDs to TMDb
 ├── movies_metadata.csv # Main movie dataset
-├── .gitignore
 └── README.md
 </pre>
 
