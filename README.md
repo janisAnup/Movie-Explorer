@@ -1,24 +1,24 @@
 Hey Janis here <br>
-This is my 2nd task as an intern at Next24Tech
+This is my 2nd task as an intern at Next24Tech<br>
 🎬 Movie Explorer<br>
-A sleek and interactive web application built using Streamlit that allows users to explore movies by genre and view key movie details such as rating, popularity, tags, and more. This was developed as part of Task 2 for my internship at Next24Tech.
+A sleek and interactive web application built using Streamlit that allows users to explore movies by genre and view key movie details such as rating, popularity, tags, and more. This was developed as part of Task 2 for my internship at Next24Tech.<br>
 
-📌 Features
-🔍 Filter movies based on genre
+📌 Features<br>
+🔍 Filter movies based on genre<br>
 
-🎥 View movie details like:
-Title & release date
-Genre and tags
-Rating and popularity
-Overview (short summary)
-🧠 Caching for better performance
-📁 Data processed from CSV files (movies_metadata.csv, keywords.csv, links.csv)
+🎥 View movie details like:<br>
+Title & release date<br>
+Genre and tags<br>
+Rating and popularity<br>
+Overview (short summary)<br>
+🧠 Caching for better performance<br>
+📁 Data processed from CSV files (movies_metadata.csv, keywords.csv, links.csv)<br>
 
-🛠️ Technologies Used
-Python 3
-Streamlit
-Pandas
-AST (Abstract Syntax Trees)
+🛠️ Technologies Used<br>
+Python 3<br>
+Streamlit<br>
+Pandas<br>
+AST (Abstract Syntax Trees)<br>
 
 📂 Folder Structure
 <pre>
@@ -33,9 +33,9 @@ Movie Explorer/
 </pre>
 
 
-🚀 How to Run
-Clone the repository
+🚀 How to Run<br>
 
+Clone the repository
 <pre> 
 git clone https://github.com/janisAnup/Movie-Explorer.git
 cd Movie-Explorer</pre>
