@@ -1,6 +1,6 @@
 Hey Janis here <br>
 This is my 2nd task as an intern at Next24Tech
-🎬 Movie Explorer
+🎬 Movie Explorer<br>
 A sleek and interactive web application built using Streamlit that allows users to explore movies by genre and view key movie details such as rating, popularity, tags, and more. This was developed as part of Task 2 for my internship at Next24Tech.
 
 📌 Features
@@ -55,5 +55,6 @@ Run the app
 streamlit run app.py</pre>
 
 
-📚 Internship Info
+📚 Internship Info<br>
+
 This project is part of my internship with Next24Tech, under Task 2: Building a Movie Explorer GUI using Streamlit in Python. The aim was to gain hands-on experience in GUI design, working with datasets, and web-based data exploration.
